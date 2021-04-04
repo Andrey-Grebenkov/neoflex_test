@@ -9,7 +9,7 @@ import java.util.List;
 
 public class JsbinPage {
 
-    public static int i;
+    public static int i = 0;
 
     public WebDriver driver;
 
@@ -31,6 +31,8 @@ public class JsbinPage {
         for (WebElement ba : balance) {
             if (ba.getText().equals("0"))
                 closePriceButton.get(i).click();
+            i++;
         }
+        i = 0;
     }
 }
