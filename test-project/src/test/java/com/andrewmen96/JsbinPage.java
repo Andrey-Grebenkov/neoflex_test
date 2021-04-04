@@ -30,8 +30,7 @@ public class JsbinPage {
 //        List<WebElement> balance = driver.findElements(By.xpath("//*[contains(@class,'acc-')]//b"));
         for (WebElement ba : balance) {
             if (ba.getText().equals("0"))
-                if (balance.get(i).getText().equals("0"))
-                    closePriceButton.get(i).click();
+                closePriceButton.get(i).click();
         }
     }
 }
