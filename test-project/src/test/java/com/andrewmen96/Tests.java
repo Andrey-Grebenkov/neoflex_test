@@ -24,7 +24,7 @@ public class Tests {
     }
 
     @Test
-    public void loginTest() {
+    public void tests() {
         driver.switchTo().frame("<proxy>");
         driver.switchTo().frame("JS Bin Output ");
         jsbin.delete();
