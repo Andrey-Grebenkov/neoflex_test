@@ -9,7 +9,7 @@ import java.util.List;
 
 public class JsbinPage {
 
-    public static int i = 0;
+    public static int i;
 
     public WebDriver driver;
 
@@ -28,11 +28,11 @@ public class JsbinPage {
     public void delete() {
 //        List<WebElement> closePriceButton = driver.findElements(By.xpath("//*[text()='(X) Закрыть счет']"));
 //        List<WebElement> balance = driver.findElements(By.xpath("//*[contains(@class,'acc-')]//b"));
+        i = 0;
         for (WebElement ba : balance) {
             if (ba.getText().equals("0"))
                 closePriceButton.get(i).click();
             i++;
         }
-        i = 0;
     }
 }
